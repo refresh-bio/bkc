@@ -290,7 +290,7 @@ std::string CBarcodedCounter::get_dedup_file_name(const std::string& input_path,
 	std::filesystem::path out(filtered_input_path);
 
 	out /= path.filename();
-	out += ".dedup_" + to_string(id) + (filtered_input_in_FASTA ? ".fasta" : ".fastq") + ".gz";
+	out += ".dedup"s + (filtered_input_in_FASTA ? ".fasta" : ".fastq") + ".gz";
 
 	return out.string();
 }
