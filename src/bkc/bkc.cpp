@@ -154,7 +154,7 @@ bool parse_args(int argc, char** argv)
 		}
 		else if (argv[i] == "--filtered_input_path"s && i + 1 < argc)
 			params.filtered_input_path = argv[++i];
-		else if (argv[i] == "--filtered_input_mode"s && i + 1 < argc)
+		else if (argv[i] == "--export_filtered_input_mode"s && i + 1 < argc)
 		{
 			++i;
 			if (argv[i] == "none"s)
