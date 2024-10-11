@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/txc
+/src/txc/x64
+/src/_prebuild/x64
+/x64
+/.vs/bkc
+/src/bkc/x64/Debug
+/src/bkc_dump/x64/Debug
+/src/bkc_dump/x64/Debug
+/src/bkc/x64/Release
+/src/bkc_dump/x64/Release

@@ -1,0 +1,15 @@
+[submodule "libs/zstd"]
+	path = libs/zstd
+	url = https://github.com/refresh-bio-dependencies/zstd
+[submodule "libs/zlib-ng"]
+	path = libs/zlib-ng
+	url = https://github.com/refresh-bio-dependencies/zlib-ng
+[submodule "libs/mimalloc"]
+	path = libs/mimalloc
+	url = https://github.com/refresh-bio-dependencies/mimalloc
+[submodule "libs/isa-l"]
+	path = libs/isa-l
+	url = https://github.com/refresh-bio-dependencies/isa-l
+[submodule "libs/libdeflate"]
+	path = libs/libdeflate
+	url = https://github.com/refresh-bio-dependencies/libdeflate

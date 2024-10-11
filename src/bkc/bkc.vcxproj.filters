@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="bkc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fq_reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kmer_counter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memory_pool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="params.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\mimalloc\src\static.c">
+      <Filter>Library Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\bkc_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\shared\filters\artifacts_filter.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\types\base_coding.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\types\common_types.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fq_reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\filters\illumina_adapters_static.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\types\kmer.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kmer_counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\refresh\memory_chunk.h">
+      <Filter>Library Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\refresh\memory_monotonic.h">
+      <Filter>Library Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memory_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\refresh\parallel-queues.h">
+      <Filter>Library Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\refresh\parallel-queues-common.h">
+      <Filter>Library Files</Filter>
+    </ClInclude>
+    <ClInclude Include="params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\refresh\sort\lib\pdqsort_par.h">
+      <Filter>Library Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\filters\poly_ACGT_filter.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\types\satc_data.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\bkc_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2268b472-dc1e-49b8-a576-a99b261faa5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{31dbc3a2-e5aa-44dd-b048-207a84e7bd20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared Files">
+      <UniqueIdentifier>{a969d5d6-59ea-4c5d-aa3e-d3f4b9f37b39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Files">
+      <UniqueIdentifier>{4f6628ab-aae4-4361-9f38-2ccf3e31132f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
