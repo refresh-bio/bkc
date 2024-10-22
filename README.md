@@ -1,5 +1,4 @@
 # BKC
-=
 [![GitHub downloads](https://img.shields.io/github/downloads/refresh-bio/bkc/total.svg?style=flag&label=GitHub%20downloads)](https://github.com/refresh-bio/bkc/releases)
 
 BKC is a program for <i>k</i>-mer counting in barcoded FASTQ/FASTA files obtained from technologies like 10x, Visium.
