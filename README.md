@@ -1,4 +1,7 @@
 # BKC
+=
+[![GitHub downloads](https://img.shields.io/github/downloads/refresh-bio/bkc/total.svg?style=flag&label=GitHub%20downloads)](https://github.com/refresh-bio/bkc/releases)
+
 BKC is a program for <i>k</i>-mer counting in barcoded FASTQ/FASTA files obtained from technologies like 10x, Visium.
 BKC is one of many projects developed by [REFRESH Bioinformatics Group](https://refresh-bio.github.io).
 If your data are not barcoded and you need to count <i>k</i>-mers, please visit [KMC](https://github.com/refresh-bio/KMC) project.
