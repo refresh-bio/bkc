@@ -27,6 +27,8 @@ inline counting_mode_t counting_mode_from_string(const std::string& str) {
 		return counting_mode_t::single;
 	else if (str == "pair")
 		return counting_mode_t::pair;
+	else if (str == "filter")
+		return counting_mode_t::filter;
 	else
 	{
 		return counting_mode_t::unknown;

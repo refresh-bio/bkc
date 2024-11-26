@@ -3,7 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LocalDebuggerWorkingDirectory>k:\10x\small</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>--mode single --input_name S10.txt --out_name S10/single.bkc --n_splits 10 --n_threads 8 --verbose 1</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>--mode pair --export_filtered_input_mode both --input_name S10.txt --output_name S10/single.bkc --n_splits 10 --n_threads 8 --verbose 1</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LocalDebuggerWorkingDirectory>K:\10x\TSP2_10x</LocalDebuggerWorkingDirectory>

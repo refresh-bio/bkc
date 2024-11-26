@@ -372,6 +372,14 @@ int main(int argc, char **argv)
 	if (((uint32_t)params.export_filtered_input) & (uint32_t)export_filtered_input_t::first)
 		barcoded_counter.ProcessExportFilteredCBCReads();
 
+	if (params.counting_mode == counting_mode_t::filter)
+	{
+		if (((uint32_t)params.export_filtered_input) & (uint32_t)export_filtered_input_t::second)
+			barcoded_counter.ProcessExportFilteredReads();
+		
+		return 0;
+	}
+
 	barcoded_counter.ProcessReads();
 
 	barcoded_counter.ShowTimings();

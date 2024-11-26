@@ -1963,6 +1963,35 @@ bool CBarcodedCounter::ProcessExportFilteredCBCReads()
 }
 
 // *********************************************************************************************
+bool CBarcodedCounter::ProcessExportFilteredReads()
+{
+	set_read_file_names();
+
+	if (!no_threads || file_names.empty())
+		return false;
+
+	no_reading_threads = max(min(no_threads / 2, (int)file_names.size()), 1);
+
+	if (verbosity_level >= 1)
+		std::cerr << "Reads loading\n";
+
+	reinit_queues();
+
+	init_bkc_files();
+
+	start_reading_threads();
+	start_reads_exporting_threads();
+
+	join_threads(reading_threads);
+	join_threads(reads_exporting_threads);
+	mi_collect(true);
+
+	times.emplace_back("CBC reads filtering", high_resolution_clock::now());
+
+	return true;
+}
+
+// *********************************************************************************************
 bool CBarcodedCounter::ProcessReads()
 {
 	set_read_file_names();
