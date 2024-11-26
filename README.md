@@ -72,7 +72,8 @@ In both cases, the `bkc` and `bkc_dump` executable files will be placed in the `
 ### Main options
 * `--mode <single|pair>` &ndash; selects the mode:
   * `single` &ndash; counting of $k$-mers (default),
-  * `pair` &ndash; counting of $k$-mer pairs.
+  * `pair` &ndash; counting of $k$-mer pairs,
+  * `filter` &ndash; CBC filtering and UMI deduplication.
 * `--cbc_len <int>` &ndash; CBC len (default: 16, min: 10, max: 16).
 * `--umi_len <int>` &ndash; UMI len (default: 12, min: 8, max: 16).
 * `--leader_len <int>` &ndash; length of $k$-mer in `single` mode or length of the 1st $k$-mer of a pair in `pair` mode (default: 27, min: 1, max: 31).
@@ -149,4 +150,9 @@ or pairs of $k$-mers:
 ```
 ./bkc --mode pair --input_name fl2.txt --cbc_len 16 --umi_len 12 --leader_len 27 --follower_len 27 --n_threads 16 --output_name pbmc_1k_v3_pair.bkc
 ./bkc_dump --input_name pbmc_1k_v3_pair.bkc --output_name pbmc_1k_v3_pair.txt
+```
+
+To just do CBC filtering and UMI deduplication:
+```
+./bkc --mode filter --input_name fl2.txt --cbc_len 16 --umi_len 12 --export_filtered_input_mode both --n_threads 16
 ```

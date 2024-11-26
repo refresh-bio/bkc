@@ -8,12 +8,12 @@ using namespace std;
 
 // *********************************************************************************************
 enum class technology_t { unknown, ten_x, visium };
-enum class counting_mode_t { unknown, single, pair };
+enum class counting_mode_t { unknown, single, pair, filter };
 enum class output_format_t { unknown, bkc, splash };
 enum class export_filtered_input_t { none = 0, first = 1, second = 2, both = 3 };
 
-const string BKC_VERSION = "1.0.0";
-const string BKC_DATE = "2024-10-11";
+const string BKC_VERSION = "1.1.0";
+const string BKC_DATE = "2024-11-26";
 
 using kmer_t = uint64_t;
 using leader_t = uint64_t;

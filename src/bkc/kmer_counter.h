@@ -313,6 +313,7 @@ public:
 
 	bool ProcessCBC();
 	bool ProcessExportFilteredCBCReads();
+	bool ProcessExportFilteredReads();
 	bool ProcessReads();
 };
 
