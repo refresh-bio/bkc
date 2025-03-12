@@ -132,6 +132,7 @@ if __name__ == "__main__":
             tar.add("x64/Release/bkc_dump.exe", arcname="bkc_dump.exe")
     else:
         run_cmd(f"{make_command} clean")
-        run_cmd(f"{make_command} CXX={cxx} CC={cc} PLATFORM=generic STATIC_LINK=true -j")
-        run_cmd(f"cd bin; tar -c * | pigz > ../bkc-{ver}.{system}.{hardware}.tar.gz; cd ..;")
+        run_cmd(f"{make_command} CXX={cxx} CC={cc} release -j") #mkokot_TODO: currenlty we are not using refresh.mk here, so just build target release, but when we include refresh.mk remove this line and use the ones below
+        #run_cmd(f"{make_command} CXX={cxx} CC={cc} PLATFORM=generic STATIC_LINK=true -j")
+        #run_cmd(f"cd bin; tar -c * | pigz > ../bkc-{ver}.{system}.{hardware}.tar.gz; cd ..;")
         run_cmd(f"{make_command} clean")
