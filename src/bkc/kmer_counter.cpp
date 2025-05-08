@@ -1886,8 +1886,7 @@ bool CBarcodedCounter::ProcessCBC()
 		if (verbosity_level >= 1)
 			std::cerr << "Looking for predefined CBC in data\n";
 
-		if (verbosity_level >= 1)
-			find_predefined_cbc();
+		find_predefined_cbc();
 
 		mi_collect(true);
 		times.emplace_back("Looking for predefined CBC in data", high_resolution_clock::now());
